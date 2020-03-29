@@ -65,7 +65,7 @@ public class GenericTestHandler {
     this.func = func;
     this.comp = comp;
     hasExecutorHook = false;
-    paramTypes = List.of(func.getGenericParameterTypes());
+    paramTypes = Arrays.asList((func.getGenericParameterTypes()));
 
     if (paramTypes.size() >= 1 &&
         paramTypes.get(0).equals(TimedExecutor.class)) {

@@ -52,7 +52,7 @@ public class BinaryTreeTrait extends SerializationTrait {
   @Override
   @SuppressWarnings("unchecked")
   public List<Integer> getMetrics(Object x) {
-    return List.of(BinaryTreeUtils.binaryTreeSize((TreeLike<Object, ?>)x),
+    return Arrays.asList(BinaryTreeUtils.binaryTreeSize((TreeLike<Object, ?>)x),
                    BinaryTreeUtils.binaryTreeHeight((TreeLike<Object, ?>)x));
   }
 

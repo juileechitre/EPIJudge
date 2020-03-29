@@ -18,7 +18,7 @@ public class TraitsFactory {
   private static final Map<Type, SerializationTrait> PRIMITIVE_TYPES_MAPPING;
 
   static {
-    PRIMITIVE_TYPES_MAPPING = new HashMap<>() {
+    PRIMITIVE_TYPES_MAPPING = new HashMap() {
       {
         put(String.class, new StringTrait());
         put(Integer.class, new IntegerTrait());
